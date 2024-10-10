@@ -341,4 +341,20 @@ public class FileExplorerController {
             }
         }
     }
+
+    @FXML
+    private void openStorageAndFileManagement() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("StorageAndFileManagement.fxml"));
+            Parent root = loader.load();
+
+            Stage storageStage = new Stage();
+            storageStage.setTitle("Storage and File Management");
+            storageStage.setScene(new Scene(root, 1200, 850));
+            storageStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            showError("Error", "Unable to load the Storage and File Management window.");
+        }
+    }
 }

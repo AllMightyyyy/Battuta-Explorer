@@ -18,7 +18,6 @@ public class IconUtil {
             if (icon instanceof ImageIcon) {
                 java.awt.Image awtImage = ((ImageIcon) icon).getImage();
 
-                // SHOUTOUT STACKOVERFLOW FOR THIS SHIT RIGHT HERE
                 BufferedImage bufferedImage = new BufferedImage(
                         awtImage.getWidth(null),
                         awtImage.getHeight(null),
@@ -30,7 +29,6 @@ public class IconUtil {
 
                 return SwingFXUtils.toFXImage(bufferedImage, null);
             } else {
-                // Handle error case
                 return null;
             }
         } catch (Exception e) {

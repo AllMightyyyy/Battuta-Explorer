@@ -25,6 +25,7 @@
               <MenuItem text="New Text File" onAction="#createNewTextFile" />
               <MenuItem text="New Folder" onAction="#createNewFolder" />
               <MenuItem text="Delete" onAction="#deleteItem" />
+              <MenuItem text="Storage and File Management" onAction="#openStorageAndFileManagement" />
             </items>
           </Menu>
         </menus>
