@@ -1,0 +1,19 @@
+.text-area {
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 14px;
+    -fx-background-color: #f9f9f9;
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #27ae60;
+}
